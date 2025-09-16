@@ -1,0 +1,125 @@
+/* Create global variables */
+:root {
+    --background-color: rgb(236, 242, 255);
+    --alternative-background-color: rgb(255, 255, 255);
+    --text-color: rgb(0, 0, 0);
+    --alternative-text-color: rgb(21, 93, 253);
+}
+
+
+
+/* Remove default website spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* General body customisation */
+body {
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Customise website title */
+.website-title {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+.website-title .website-name {
+    color: var(--alternative-text-color);
+    font-weight: bold;
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+
+
+/* Customise form */
+form {
+    background-color: var(--alternative-background-color);
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    padding: 20px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* to add shadow*/
+    width: 420px;
+}
+
+.form-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 15px;
+    color: gray;
+}
+
+.title {
+    color: var(--alternative-text-color);
+    font-weight: bold;
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+
+
+/* Customise form group */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 6px 6px;
+    font-size: 14px;
+}
+
+.email-section {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.password-section {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+button {
+    border: none;
+    padding: 6px 6px;
+    border-radius: 4px;
+    color: white;
+    background-color: var(--alternative-text-color);
+    margin-bottom: 25px;
+}
+
+
+
+/* Sign up message */
+.sign-up-message {
+    text-align: center;
+}
+
+.sign-up-message a {
+    text-decoration: none;
+}
